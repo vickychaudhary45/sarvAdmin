@@ -187,7 +187,19 @@ export default function MiniDrawer(props) {
                       }}
                     >
                       {/* Replace the icon with an appropriate one */}
-                      {index % 1 === 0 ? <InboxIcon /> : <MailIcon />}
+                      {/* {index % 1 === 0 ? <InboxIcon /> : <MailIcon />} */}
+                      {index == 0 && <MailIcon />}
+                      {index == 1 && <InboxIcon />}
+                      {index == 2 && <MailIcon />}
+                      {index == 3 && <InboxIcon />}
+                      {index == 4 && <MailIcon />}
+                      {index == 5 && <InboxIcon />}
+                      {index == 6 && <MailIcon />}
+                      {index == 7 && <InboxIcon />}
+                      {index == 8 && <MailIcon />}
+                      {index == 9 && <InboxIcon />}
+                      {index == 10 && <MailIcon />}
+                      {index == 11 && <InboxIcon />}
                     </ListItemIcon>
                     <ListItemText
                       primary={text}

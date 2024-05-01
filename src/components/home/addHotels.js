@@ -764,9 +764,21 @@ const AddHotels = () => {
                         // onChange={(event, value) => handleAutocompleteChangeMultipel('amenities', event, value)}
                       />
                     </div>
-                    {/* <div className="col-sm-4" style={{ display: 'flex', alignItems: 'end', justifyContent: 'center' }}>
-                      <button className="form-label btn btn-primary btn-border" style={{ marginBottom: '0px' }}>Add Rooms</button>
-                    </div> */}
+                    <div
+                      className="col-sm-2"
+                      style={{
+                        display: "flex",
+                        alignItems: "end",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <button
+                        className="form-label btn btn-secondary btn-border"
+                        style={{ marginBottom: "0px" }}
+                      >
+                        calender
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
