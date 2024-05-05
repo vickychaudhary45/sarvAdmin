@@ -168,7 +168,7 @@ const Calendar = () => {
     }
     (async function () {
       const response = await fetch(
-        "https://demo.turangh.com/experience/" + experienceId,
+        "http://localhost:3232/experience/" + experienceId,
         {
           method: "GET",
           headers: {
@@ -187,7 +187,7 @@ const Calendar = () => {
   }, []);
   const getStartTIme = async () => {
     const response = await fetch(
-      "https://demo.turangh.com/experience/" + experienceId,
+      "http://localhost:3232/experience/" + experienceId,
       {
         method: "GET",
         headers: {
@@ -239,7 +239,7 @@ const Calendar = () => {
     };
     console.log(data, "data");
     const deleteEvets = await fetch(
-      "https://demo.turangh.com/experience/events/" + experienceId,
+      "http://localhost:3232/experience/events/" + experienceId,
       {
         method: "DELETE",
         headers: {
@@ -292,7 +292,7 @@ const Calendar = () => {
   const handleBackendEventAdd = async (event) => {
     const data = event;
     const result = await fetch(
-      "https://demo.turangh.com/experience/events/" + experienceId,
+      "http://localhost:3232/experience/events/" + experienceId,
       {
         method: "POST",
         headers: {

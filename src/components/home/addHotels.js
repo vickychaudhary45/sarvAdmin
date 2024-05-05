@@ -168,7 +168,7 @@ const AddHotels = () => {
       // console.log("formDataWithImages----------->",rooms);
 
       const response = await fetch(
-        `https://demo.turangh.com/inventries/hotel`,
+        `http://localhost:3232/inventries/hotel`,
         {
           method: "POST",
           headers: {

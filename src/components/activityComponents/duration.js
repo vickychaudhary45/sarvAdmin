@@ -17,7 +17,7 @@ const Duration = () => {
       setExperienceId(_id);
       (async function () {
         const response = await fetch(
-          `https://demo.turangh.com/experience/${experienceId}`,
+          `http://localhost:3232/experience/${experienceId}`,
           {
             method: "GET",
             headers: {
@@ -61,7 +61,7 @@ const Duration = () => {
     });
 
     const response = await fetch(
-      `https://demo.turangh.com/experience/${experienceId}?${query.toString()}`,
+      `http://localhost:3232/experience/${experienceId}?${query.toString()}`,
       {
         method: "PUT",
         headers: {

@@ -69,7 +69,7 @@ const ManageCustomer = () => {
   //                 .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
   //                 .join('&');
 
-  //             const url = `https://demo.turangh.com/inventries/vehicle?${queryString}`;
+  //             const url = `http://localhost:3232/inventries/vehicle?${queryString}`;
 
   //             const response = await fetch(url, {
   //                 method: 'POST',

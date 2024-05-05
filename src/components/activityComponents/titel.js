@@ -11,7 +11,7 @@ const Titel = () => {
       try {
         if (id) {
           const response = await fetch(
-            `https://demo.turangh.com/experience/${id}`,
+            `http://localhost:3232/experience/${id}`,
             {
               method: "GET",
               headers: {
@@ -40,11 +40,12 @@ const Titel = () => {
       title: title,
     });
     const response = await fetch(
-      `https://demo.turangh.com/experience?${queryParams.toString()}`,
+      `http://localhost:3232/experience?${queryParams.toString()}`,
       {
         method: "POST",
       }
     );
+    console.log(response, 'response');
     if (!response.ok) {
       alert("Something went wrong");
       // console.log("error", response);

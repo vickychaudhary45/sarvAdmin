@@ -228,7 +228,7 @@ const AddAdvanture = () => {
       // });
 
       const response = await fetch(
-        `https://demo.turangh.com/advanture/?${queryParams.toString()}`,
+        `http://localhost:3232/advanture/?${queryParams.toString()}`,
         {
           method: "POST",
           headers: {

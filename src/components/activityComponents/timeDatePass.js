@@ -18,7 +18,7 @@ const TimeDatePass = () => {
     if (experienceId && experienceId.length > 0) {
       (async function () {
         const response = await fetch(
-          `https://demo.turangh.com/experience/${experienceId}`,
+          `http://localhost:3232/experience/${experienceId}`,
           {
             method: "GET",
             headers: {
@@ -55,7 +55,7 @@ const TimeDatePass = () => {
       availabilityType: type,
     };
     const response = await fetch(
-      `https://demo.turangh.com/experience/${experienceId}`,
+      `http://localhost:3232/experience/${experienceId}`,
       {
         method: "PUT",
         headers: {

@@ -51,7 +51,7 @@ const Inclusions = () => {
     if (experienceId) {
       (async function () {
         const response = await fetch(
-          `https://demo.turangh.com/experience/${experienceId}`,
+          `http://localhost:3232/experience/${experienceId}`,
           {
             method: "GET",
             headers: {
@@ -90,7 +90,7 @@ const Inclusions = () => {
       inclusions: { short_des: short_description, detail_dec: description },
     };
     const response = await fetch(
-      `https://demo.turangh.com/experience/${experienceId}`,
+      `http://localhost:3232/experience/${experienceId}`,
       {
         method: "PUT",
         headers: {

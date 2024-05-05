@@ -71,7 +71,7 @@ const StartTime = () => {
     if (experienceId && experienceId.length > 0) {
       (async () => {
         const response = await fetch(
-          "https://demo.turangh.com/experience/" + experienceId,
+          "http://localhost:3232/experience/" + experienceId,
           {
             method: "GET",
             headers: {
@@ -167,7 +167,7 @@ const StartTime = () => {
       availability_detail: [...updatedRows],
     };
     const response = await fetch(
-      "https://demo.turangh.com/experience/updateTiming/" + experienceId,
+      "http://localhost:3232/experience/updateTiming/" + experienceId,
       {
         method: "POST",
         headers: {

@@ -138,7 +138,7 @@ const AddHolidayPackage = () => {
     //         formDataWithImages.append(key, value);
     //     });
     //     const updatedFormData = { rooms: JSON.stringify(rooms) };
-    //     const response = await fetch(`https://demo.turangh.com/inventries/hotel`, {
+    //     const response = await fetch(`http://localhost:3232/inventries/hotel`, {
     //         method: 'POST',
     //         headers: {
     //             // 'Cookie': `roomInfo=${token}`,

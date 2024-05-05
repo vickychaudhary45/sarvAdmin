@@ -51,7 +51,7 @@
 //     if (experienceId && experienceId.length > 0) {
 //       (async function () {
 //         const response = await fetch(
-//           `https://demo.turangh.com/experience/${experienceId}`,
+//           `http://localhost:3232/experience/${experienceId}`,
 //           {
 //             method: "GET",
 //             headers: {
@@ -83,7 +83,7 @@
 //       exclusions: { short_des: short_description, detail_dec: description },
 //     };
 //     const res = await fetch(
-//       "https://demo.turangh.com/experience/" + experienceId,
+//       "http://localhost:3232/experience/" + experienceId,
 //       {
 //         method: "PUT",
 //         headers: {
@@ -241,7 +241,7 @@ const Exclusions = () => {
     if (experienceId && experienceId.length > 0) {
       (async function () {
         const response = await fetch(
-          `https://demo.turangh.com/experience/${experienceId}`,
+          `http://localhost:3232/experience/${experienceId}`,
           {
             method: "GET",
             headers: {
@@ -276,7 +276,7 @@ const Exclusions = () => {
       exclusions: { short_des: short_description, detail_dec: description },
     };
     const res = await fetch(
-      "https://demo.turangh.com/experience/" + experienceId,
+      "http://localhost:3232/experience/" + experienceId,
       {
         method: "PUT",
         headers: {

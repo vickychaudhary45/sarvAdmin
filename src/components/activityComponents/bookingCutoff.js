@@ -31,7 +31,7 @@ const BookingCutoff = () => {
     }
     (async function () {
       const response = await fetch(
-        "https://demo.turangh.com/experience/" + experienceId,
+        "http://localhost:3232/experience/" + experienceId,
         {
           method: "GET",
           headers: {
@@ -79,7 +79,7 @@ const BookingCutoff = () => {
         },
       };
       const response = await fetch(
-        "https://demo.turangh.com/experience/" + experienceId,
+        "http://localhost:3232/experience/" + experienceId,
         {
           method: "PUT",
           headers: {
@@ -101,7 +101,7 @@ const BookingCutoff = () => {
       };
       console.log(data);
       const response = await fetch(
-        "https://demo.turangh.com/experience/" + experienceId,
+        "http://localhost:3232/experience/" + experienceId,
         {
           method: "PUT",
           headers: {

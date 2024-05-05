@@ -31,7 +31,7 @@ const LocationDetails = () => {
     if (experienceId) {
       (async function () {
         const response = await fetch(
-          `https://demo.turangh.com/experience/${experienceId}`,
+          `http://localhost:3232/experience/${experienceId}`,
           {
             method: "GET",
             headers: {
@@ -94,7 +94,7 @@ const LocationDetails = () => {
       return;
     }
     const response = await fetch(
-      `https://demo.turangh.com/experience/${experienceId}?${query.toString()}`,
+      `http://localhost:3232/experience/${experienceId}?${query.toString()}`,
       {
         method: "PUT",
         headers: {

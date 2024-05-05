@@ -72,7 +72,7 @@ const MeetingPoint = () => {
     if (experienceId && experienceId.length > 0) {
       (async function () {
         const response = await fetch(
-          "https://demo.turangh.com/experience/" + experienceId,
+          "http://localhost:3232/experience/" + experienceId,
           {
             method: "GET",
             headers: {
@@ -161,7 +161,7 @@ const MeetingPoint = () => {
       removeIds: removeIds,
     };
     const response = await fetch(
-      "https://demo.turangh.com/experience/meetingPoint/" + experienceId,
+      "http://localhost:3232/experience/meetingPoint/" + experienceId,
       {
         method: "POST",
         headers: {
